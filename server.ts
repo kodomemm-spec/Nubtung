@@ -9,7 +9,8 @@ import { GoogleGenAI, Type } from "@google/genai";
 dotenv.config();
 
 const app = express();
-const PORT = 3000;
+// Cloud Run (and most hosts) inject PORT; keep 3000 as the local-dev default.
+const PORT = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
 
 // Middleware for parsing JSON with increased limit for base64 images
 app.use(express.json({ limit: "25mb" }));
