@@ -1,0 +1,6 @@
+{
+  "name": "NubTung (นับตังค์)",
+  "description": "ระบบบันทึกบัญชีและสรุปงบกำไรขาดทุนอัตโนมัติจาก Statement ธนาคาร พร้อมระบบสแกนสลิปและตรวจสลิปซ้ำสำหรับ SME",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
